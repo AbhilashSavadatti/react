@@ -22,14 +22,14 @@ html{
 
 
 }
-button,input,select{
+button,InputBox,select{
     border: 0;
     cursor: pointer;
 
 
 }
 
-button:focus,input:focus,select:focus{
+button:focus,InputBox:focus,select:focus{
 
     outline: none;
 }

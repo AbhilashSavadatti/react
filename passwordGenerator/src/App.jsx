@@ -50,7 +50,7 @@ setPAssword(pass);
      <h1 className=' mt-4 text-4xl text-center text-white ' >Password generator</h1>
     <div className=" flex-wrap flex justify-center mt-10 w-[450px] h-[155px] rounded-md bg-gray-300 ">
 
-    <input 
+    <InputBox 
     ref={passwordRef}
     placeholder='Password' 
     readOnly 
@@ -63,18 +63,18 @@ setPAssword(pass);
     
     <div className=" w-full mx-auto h-[50px] flex items-center gap-4 ">
 
-    <input
+    <InputBox
     onChange={(e) => setLength(e.target.value)}
     value={length} min={6} max={100} type="range" />
     <label className='' >Length({length})</label>
-    <input
+    <InputBox
     defaultChecked={numberAllowed}
-    id='numberInput'
+    id='numberInputBox'
     onChange={() => {setNumberAllowed((prev) => !prev)}}
      type="checkbox"/>
     <label className=' '>Numbers</label>
 
-    <input 
+    <InputBox 
     defaultChecked={charAllowed}
     onChange={() => setCharAllowed((prev) => !prev)}
 
