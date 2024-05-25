@@ -9,7 +9,7 @@ const {setUser} = useContext(UserContext)
 
 const handleSubmit =(e) => {
 e.preventDefault()
-setUser({username,pas})
+setUser({username,password})
 
 }
 
@@ -19,6 +19,7 @@ setUser({username,pas})
         <input type="text" placeholder='username' 
         value={username}
         onChange={(e) => setUsername(e.target.value)}
+        
         />
         <input type="text" placeholder='password'
          value={password}
