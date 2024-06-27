@@ -4,6 +4,7 @@ import React , {useState, useEffect } from 'react'
 import authService from './appwrite/auth'
 import {login,logout} from "./store/authSlice"
 import { Header, Footer } from './components'
+import { Outlet } from 'react-router-dom'
 
 
 function App() {
@@ -31,7 +32,8 @@ function App() {
     <div className=" w-full block">
     <Header />
     <main>
-     TODO {/* <Outlet /> */}
+     <Outlet />
+     {/* Ye Outlet comment tha isliye koi bhi route kaam nhi kar rhe the */}
     </main>
     <Footer />
 
